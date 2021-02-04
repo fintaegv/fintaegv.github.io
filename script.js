@@ -73,7 +73,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                           })
                         })
                       } else if (result.isDenied) {
-                        Swal.fire('Yaa gapapa deh, Still Lafyuuu:(', '', 'error').then(function () {
+                        Swal.fire('Ya gapapa deh, Still Lafyuuu:(', '', 'error').then(function () {
                           Swal.fire('Yaudah deh bye!')
                         })
                       }
