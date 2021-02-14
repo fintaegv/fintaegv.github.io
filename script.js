@@ -57,7 +57,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   inputValue: 1500
                 }).then((e) => {
                   val = e.value
-                  Swal.fire(`I LOVE YOU MORE THAN ${val}`).then(function () {
+                  Swal.fire(`I LOVE YOU MORE THAN ${val}, SANGEO!`).then(function () {
                     Swal.fire({
                       title: `Sekarang ${nama} mau digombalin ga?`,
                       showDenyButton: true,
@@ -68,8 +68,8 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
                         Swal.fire(`Ada odong-odong nabrak tukang jamu, mau dong disayang kamu :3 (jadi pacar kamu juga boleh hihi)`).then(function () {
-                          Swal.fire('Terakhir deh sayang').then(function () {
-                            Swal.fire('Coba klik ikon hati di paling bawah dong')
+                          Swal.fire('Ini terakhir').then(function () {
+                            Swal.fire('Coba klik ikon hati di paling bawah dong, hasilnya sama soalnya ga ngerti ngerubahnya:(')
                           })
                         })
                       } else if (result.isDenied) {
