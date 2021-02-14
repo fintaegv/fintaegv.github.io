@@ -12,7 +12,7 @@ if (url.searchParams.get('by') != null) {
 
 let footer = document.getElementById("credit");
 footer.innerHTML = sender;
-footer.href = "https://www.twitter.com/fintaegv/";
+footer.href = "https://www.twitter.com/sapumukalu/";
 
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire("Hai Sasa saos tiram", "Ni ada pertanyaan valentine edition", "question").then(function () {
@@ -38,22 +38,12 @@ document.querySelector(".tombol").addEventListener('click', function () {
             title: `${nama} seneng ga kalau diucapin happy valentine sama ${sender}?`,
             showDenyButton: true,
             showCancelButton: false,
-            confirmButtonText: `Banget`,
-            denyButtonText: `Gak`,
+            confirmButtonText: `Banget sampe ke pluto`,
+            denyButtonText: `Ga dulu deh`,
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
-            if (result.isConfirmed)
-                Swal.fire(`WOAH jadi malu, happy valentine sasa saos teriyaki hihi`).then(function () {
-          Swal.fire({
-            title: `${nama} mau digombalin ga?`,
-            showDenyButton: true,
-            showCancelButton: false,
-            confirmButtonText: `Gombalin sini`,
-            denyButtonText: `Lagi males:(`,
-         }).then((result) => {
-            /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-                Swal.fire(`Ada odong-odong nabrak tukang jamu, mau dong disayang kamu (jadi pacar kamu juga boleh hihi)`).then(function () {
+              Swal.fire(`WOAH jadi malu, happy valentine sasa saos teriyaki hihi:3`).then(function () {
                 Swal.fire({
                   title: 'If you could say I LOVE YOU, how much would you spend?',
                   icon: 'question',
@@ -69,22 +59,22 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   val = e.value
                   Swal.fire(`I LOVE YOU MORE THAN ${val}`).then(function () {
                     Swal.fire({
-                      title: `Valentine hari ini bakal kemana?`,
+                      title: `Sekarang ${nama} mau digombalin ga?`,
                       showDenyButton: true,
                       showCancelButton: false,
-                      confirmButtonText: `Di rumah aja`,
-                      denyButtonText: `Jalan dong!`,
+                      confirmButtonText: `Gombalin sini`,
+                      denyButtonText: `Lagi males:(`,
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
-                        Swal.fire(`Betul di rumah aja lagi covid, mending bareng ${sender} disini wkwk`).then(function () {
-                          Swal.fire('Terakhir deh hihi').then(function () {
+                        Swal.fire(`Ada odong-odong nabrak tukang jamu, mau dong disayang kamu :3 (jadi pacar kamu juga boleh hihi)`).then(function () {
+                          Swal.fire('Terakhir deh sayang').then(function () {
                             Swal.fire('Coba klik ikon hati di paling bawah dong')
                           })
                         })
                       } else if (result.isDenied) {
-                        Swal.fire('Ntar di jalan tiati ya, pakai masker trus bawa hand sanitizer', '', 'error').then(function () {
-                          Swal.fire('Yaudah deh bye!')
+                        Swal.fire('Ya gapapa deh, gombalin Levi sama Mikasa aja', '', 'error').then(function () {
+                          Swal.fire('Otw bunuh titan, bye!')
                         })
                       }
                     })
@@ -92,25 +82,16 @@ document.querySelector(".tombol").addEventListener('click', function () {
                 })
               })
             } else if (result.isDenied) {
-                Swal.fire('Ya gapapa deh, gombalin Levi sama Mikasa aja', '', 'error').then(function () {
-                Swal.fire('Yaudah deh bye!')
-                })
-               }
-             })
-           })
-         })
-       })
-     } else if (result.isDenied) {
-         Swal.fire(`Tetep mau ucapin, happy valentine`, '', 'error').then(function () {
-         Swal.fire('Yaudah mau cari kakak roje dulu, bye')
-         })
-        }
-      })
-    })
+              Swal.fire(`Tetep mau ucapin, Happy Valentine ${nama}`, '', 'error').then(function () {
+                Swal.fire('Yaudah mau cari kakak roje dulu, bye!')
+              })
+            }
+          })
+        })
+      });
+    });
   });
- });
 });
-});       
 
 
 
