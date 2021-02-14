@@ -44,7 +44,6 @@ document.querySelector(".tombol").addEventListener('click', function () {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed)
                 Swal.fire(`WOAH jadi malu, happy valentine sasa saos teriyaki hihi`).then(function () {
-        }).then(function () {
           Swal.fire({
             title: `${nama} mau digombalin ga?`,
             showDenyButton: true,
