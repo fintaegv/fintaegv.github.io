@@ -93,25 +93,25 @@ document.querySelector(".tombol").addEventListener('click', function () {
                 })
               })
             } else if (result.isDenied) {
-                        Swal.fire('Ya gapapa deh, gombalin Levi sama Mikasa aja', '', 'error').then(function () {
-                          Swal.fire('Yaudah deh bye!')
-                        })
-                      }
-                    })
-                  })
+                Swal.fire('Ya gapapa deh, gombalin Levi sama Mikasa aja', '', 'error').then(function () {
+                Swal.fire('Yaudah deh bye!')
                 })
-              })
-            } else if (result.isDenied) {
-              Swal.fire(`Tetep mau ucapin, happy valentine`, '', 'error').then(function () {
-                Swal.fire('Yaudah mau cari kakak roje dulu, bye')
-              })
-            }
-          })
-        })
-      });
-    });
+               }
+             })
+           })
+         })
+       })
+     } else if (result.isDenied) {
+         Swal.fire(`Tetep mau ucapin, happy valentine`, '', 'error').then(function () {
+         Swal.fire('Yaudah mau cari kakak roje dulu, bye')
+         })
+        }
+      })
+    })
   });
+ });
 });
+});       
 
 
 
