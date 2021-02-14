@@ -45,16 +45,16 @@ document.querySelector(".tombol").addEventListener('click', function () {
             if (result.isConfirmed)
                 Swal.fire(`WOAH jadi malu, happy valentine sasa saos teriyaki hihi`).then(function () {
         }).then(function () {
-          const pertanyaan = Swal.fire({
+          Swal.fire({
             title: `${nama} mau digombalin ga?`,
             showDenyButton: true,
             showCancelButton: false,
             confirmButtonText: `Gombalin sini`,
             denyButtonText: `Lagi males:(`,
-          }).then((result) => {
+         }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-              Swal.fire(`Ada odong-odong nabrak tukang jamu, mau dong disayang kamu (jadi pacar kamu juga boleh hihi)`).then(function () {
+                Swal.fire(`Ada odong-odong nabrak tukang jamu, mau dong disayang kamu (jadi pacar kamu juga boleh hihi)`).then(function () {
                 Swal.fire({
                   title: 'If you could say I LOVE YOU, how much would you spend?',
                   icon: 'question',
